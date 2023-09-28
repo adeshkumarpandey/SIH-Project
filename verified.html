@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            font-family: montserrat;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        #main {
+            height: 100%;
+            width: 100%;
+            background-color: #F1F2F4;
+        }
+
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-between;
+            height: 10%;
+            background: linear-gradient(#B6D448, #D4EC82);
+
+            /* background-color: coral; */
+        }
+
+        #logo {
+            font-size: 20px;
+            font-family: montserrat;
+            font-weight: 600;
+            margin: 20px;
+        }
+
+        #main button {
+            border-radius: 20px;
+            padding: 10px;
+            margin-right: 20px;
+            background-color: black;
+            font-weight: 550;
+            color: #fff;
+            z-index: 2;
+        }
+
+        #main button:hover {
+            border: #111 2px solid;
+            background-color: white;
+            color: #111;
+        }
+
+
+        #form {
+            height: 400px;
+            width: 400px;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            background-color: #dec8c83f;
+            border-radius: 12px;
+            box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #a5a4a4;
+        }
+
+        #form>h1 {
+            background: #C63D2F;
+            margin: 10% auto;
+            width: fit-content;
+            padding: 0 40px;
+            border-radius: 50px;
+        }
+
+        #form input {
+            border-radius: 5px;
+            height: 30px;
+            width: 300px;
+            margin: 10px;
+            border: none;
+            box-shadow: 0.5px 1px #111 solid;
+        }
+
+        #form button:hover {
+            border: #D4EC82 2px solid;
+            background-color: white;
+            color: #B6D448;
+        }
+
+        #form button {
+            padding: 5px 10px;
+            margin: 20px auto;
+        }
+
+        #footer {
+            text-align: left;
+            margin: 30%;
+            word-spacing: 2px;
+            font-size: 20px;
+            line-height: 25px;
+            padding: 15px;
+            border-radius: 10px;
+            background-color: #C63D2F;
+        }
+
+        #footer h1 {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        #fake{
+            border-radius: 50%;
+            
+        }
+        @media (max-width:600px) {
+            #form>h1 {
+                position: absolute;
+                top: 5px;
+            }
+            #footer {
+            text-align: left;
+            margin-top: 106%;
+            margin-left: 0%;
+            width: 100%;
+            padding: 15px;
+        }
+        #form button {
+            padding: 5px 10px;
+            margin: 0px auto;
+        }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="main">
+
+        <div id="navbar">
+            <div id="logo">TrustUID</div>
+            <div id="part-2">
+                <a href="index.html"><button>Sign Out</button></a>
+                <button>Learn more</button>
+
+            </div>
+        </div>
+        <center> <img src="SIH-Logo.png" alt=""></center>
+
+
+        <div id="form">
+            <h1>Fake Profile <br> Detected! </h1>
+
+            <img  id="fake" src="/378998542_300981162728811_6137583532809049007_n.jpg">
+
+            <input type="text" placeholder="https://instagram.com/angel_priya1208?igshid=NzZhOTFlYzFmZQ==" required><br>
+
+            <a href="verified.html"><button>its a fake account!</button></a>
+        </div>
+        <div id="footer">
+            <h1>Not verified!</h1>
+
+            India: aadhar available to members with a <b>valid Aadhaar number</b> and an Indian phone number.
+            <br>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

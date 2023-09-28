@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="SIH-Logo.png" type="image/x-icon">
+    <title>Prototype</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: montserrat;
+
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        #main {
+            height: 100%;
+            width: 100%;
+            background-color: #F1F2F4;
+        }
+
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-between;
+            height: 10%;
+            background: linear-gradient(#B6D448, #D4EC82);
+
+            /* background-color: coral; */
+        }
+
+        #logo {
+            font-size: 20px;
+            font-family: montserrat;
+            font-weight: 600;
+            margin: 20px;
+        }
+
+        #logo a {
+            color: #111;
+            text-decoration: none;
+        }
+
+        #logo:hover {
+            background: white;
+            color: #111;
+            padding: 20px;
+            margin: 5px;
+            border-radius: 10px;
+        }
+
+        #sih>img {
+            position: absolute;
+            margin: 0 auto;
+            top: 0;
+            height: 60px;
+        }
+
+        #main button {
+            border-radius: 20px;
+            padding: 10px;
+            margin-right: 20px;
+            background-color: black;
+            font-weight: 550;
+            color: #fff;
+        }
+
+        #button {
+            border-radius: 20px;
+            padding: 10px 30px;
+            margin: 60px;
+            background-color: black;
+            font-weight: 550;
+            color: #fff;
+        }
+
+        #button2 {
+            border-radius: 20px;
+            position: absolute;
+            top: 22%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px 30px;
+            background-color: black;
+            font-weight: 550;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        #main button:hover {
+            border: #111 2px solid;
+            background-color: white;
+            color: #111;
+        }
+
+        #fb:nth-child(2) {
+            margin-top: 10px;
+            margin-left: 25%;
+
+            line-height: 50px;
+        }
+
+        #fb:nth-child(1) {
+            margin-top: 10px;
+            margin-left: 5%;
+
+            line-height: 50px;
+        }
+
+        #handles {
+            margin-top: 15%;
+            display: flex;
+            align-items: center;
+        }
+
+        #tit {
+            background: linear-gradient(#B6D448, #D4EC82);
+            width: fit-content;
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            padding: 15px;
+            border-radius: 15px;
+        }
+
+        #Twitter {
+            padding: 10px;
+            background-color: #1DA1F2;
+            border-radius: 12px;
+        }
+
+        #Facebook {
+            border-radius: 12px;
+            padding: 10px;
+            background-color: #4267B2;
+        }
+
+        #LinkedIn {
+            border-radius: 12px;
+            padding: 10px;
+            background-color: #0072b1;
+        }
+
+        #Insta {
+            border-radius: 12px;
+            padding: 10px;
+            background: linear-gradient(#f9ce34, #ee2a7b, #6228d7);
+        }
+
+        .url {
+            border: none;
+            padding: 2%;
+            border-radius: 10px;
+            width: 500px;
+            margin: 2%;
+        }
+
+        h2 {
+            padding: 15px;
+        }
+
+        @media (max-width:600px) {
+
+            #sih>img {
+                display: none;
+            }
+
+            .url {
+                border: none;
+                padding: 2%;
+                border-radius: 10px;
+                width: 50px;
+                margin: 2%;
+            }
+
+            #tit {
+                background: linear-gradient(#B6D448, #D4EC82);
+                width: 100%;
+                position: absolute;
+                top: 28%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: small;
+                padding: 15px;
+                border-radius: 15px;
+            }
+
+            #Twitter {
+                padding: 0px;
+                background-color: #1DA1F2;
+                border-radius: 12px;
+            }
+
+            #Facebook {
+                border-radius: 12px;
+                padding: 0px;
+                background-color: #4267B2;
+            }
+
+            #LinkedIn {
+                border-radius: 12px;
+                padding: 0px;
+                background-color: #0072b1;
+            }
+
+            #Insta {
+                border-radius: 12px;
+                padding: 0px;
+                background: linear-gradient(#f9ce34, #ee2a7b, #6228d7);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="main">
+
+        <div id="navbar">
+            <div id="logo"><a href="index.html">TrustUID</a></div>
+            <div id="sih">
+                <img src="SIH-Logo.png">
+            </div>
+            <div id="credentials">
+                <a href="index.html"><button>Sign Out</button></a>
+                <a href="#"><button>Credits</button></a>
+                <button>About</button>
+            </div>
+        </div>
+
+        <div id="footer">
+
+            <Center>
+                <h2>Click on fake Detection button to check if the profile is verified or not</h2>
+                <a id="button2" href="fake.html">Fake Detection</a>
+
+                <h1 id="tit">Add Your Social Media Profiles </h1>
+                <div id="handles">
+                    <div id="fb">
+                        <h1 id="Facebook">Facebook</h1>
+                        <input class="url" type="url" placeholder="Facebook Profile URL" required>
+
+                        <h1 id="Insta">Instagram</h1>
+                        <input class="url" type="url" placeholder="Instagram Page URL" required>
+                    </div>
+                    <div id="fb">
+                        <h1 id="Twitter">Twitter</h1>
+                        <input class="url" type="url" placeholder="Twitter Profile URL" required>
+
+                        <h1 id="LinkedIn">LinkedIn</h1>
+                        <input class="url" type="url" placeholder="LinkedIn  Profile URL" required>
+
+                    </div>
+                </div>
+                <input id="button" type="submit">
+            </Center>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

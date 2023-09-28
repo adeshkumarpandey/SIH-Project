@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="SIH-Logo.png" type="image/x-icon">
+    <title>Prototype</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: montserrat;
+
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        #main {
+            height: 100%;
+            width: 100%;
+            background-color: #F1F2F4;
+        }
+
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-between;
+            height: 10%;
+            background: linear-gradient(#B6D448, #D4EC82);
+
+            /* background-color: coral; */
+        }
+
+        #logo {
+            font-size: 20px;
+            font-family: montserrat;
+            font-weight: 600;
+            margin: 20px;
+        }
+
+        #logo:hover {
+            background: white;
+            color: #111;
+            padding: 20px;
+            margin: 5px;
+            border-radius: 10px;
+        }
+
+        #sih>img {
+            position: absolute;
+            margin: 0 auto;
+            top: 0;
+            height: 60px;
+        }
+
+        #main button {
+            border-radius: 20px;
+            padding: 10px;
+            margin-right: 20px;
+            background-color: black;
+            font-weight: 550;
+            color: #fff;
+        }
+
+        #main button:hover {
+            border: #111 2px solid;
+            background-color: white;
+            color: #111;
+        }
+
+        #circle {
+            margin-top: 100px;
+            margin-left: 100px;
+            height: 500px;
+            width: 500px;
+            border-radius: 50%;
+            text-align: center;
+            background: linear-gradient(#B6D448, #D4EC82);
+
+        }
+
+        #circle h1 {
+            margin-top: 100px;
+        }
+
+        #hero {
+            display: flex;
+            align-items: center;
+        }
+
+        #hero-b {
+            margin-left: 20%;
+            font-size: 40px;
+        }
+
+        #hero-b button {
+            margin-top: 10%;
+        }
+
+        #shot {
+            margin-top: 5%;
+        }
+
+        #guide {
+            padding-top: 100px;
+            width: 80%;
+            font-size: larger;
+            text-align: left;
+        }
+
+        @media (max-width:600px) {
+            #sih>img {
+                display: none;
+            }
+
+            #circle h1 {
+                margin-top: 80px;
+            }
+
+            #navbar {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                justify-content: space-between;
+                height: 10%;
+                width: 505px;
+            }
+
+            #hero-b p {
+                display: none;
+            }
+
+            #circle {
+                margin-top: 20px;
+                margin-left: 100px;
+                height: 190px;
+                width: 200px;
+                border-radius: 50%;
+                text-align: center;
+                background: linear-gradient(#B6D448, #D4EC82);
+
+            }
+
+            #main {
+                height: 100%;
+                width: 505px;
+                background-color: #F1F2F4;
+            }
+
+            #shot {
+                margin-top: 250px;
+                height: 200px;
+                background: center/center;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="main">
+
+
+        <div id="navbar">
+            <div id="logo">TrustUID</div>
+            <div id="sih">
+                <img src="SIH-Logo.png">
+            </div>
+            <div id="credentials">
+                <a href="login.html"><button>Login</button></a>
+                <a href="signup.html"><button>Sign Up</button></a>
+                <button>About</button>
+            </div>
+        </div>
+        <div id="hero">
+            <div id="circle">
+                <h1>TrustUID</h1>
+                <h1>Modern Fake <br>Profile <br> Detector</h1>
+            </div>
+
+            <div id="hero-b">
+                <p>A one-shot solution for detecting fake <br> social media profiles <br> via the profile URL.</p>
+                <a href="signup.html"><button>Sign Up</button></a>
+                <button>About</button>
+            </div>
+        </div>
+
+        <section>
+            <center>
+                <div id="guide">
+                    <p>
+
+                        <strong>&#x2022;Guidelines regarding awareness about fake
+                        profiles: </strong><br><br>
+
+                        <b>&#x2022;Exercise Caution with Unknown Profiles:</b><br>
+
+                        Always be cautious when connecting with or accepting friend requests from individuals you don't
+                        know
+                        personally. Fake profiles often target unsuspecting users.<br><br>
+                        <b>&#x2022;Verify Information and Profile Details:</b><br>
+
+                        Take the time to verify the authenticity of a profile. Look for complete profiles, consistent
+                        information, and legitimate contact details. Be wary of profiles with limited information or
+                        vague
+                        details.<br><br>
+                        <b>&#x2022;Beware of Suspicious Behavior:</b><br>
+
+                        Pay attention to unusual or suspicious behavior, such as unsolicited messages with links,
+                        requests
+                        for personal information, or overly aggressive or inappropriate interactions. Trust your
+                        instincts
+                        if something feels off.<br><br>
+                        <b> &#x2022;Report and Block Fake Profiles:</b><br>
+
+                        If you encounter a fake or suspicious profile, report it to the social media platform
+                        immediately.
+                        Blocking such profiles can also prevent further unwanted contact. <br><br>
+                        <b>&#x2022;Stay Informed and Educated:</b><br>
+
+                        Stay up-to-date with the latest online security threats and trends. Educate yourself and others
+                        about how to recognize and respond to fake profiles, misinformation, and online scams to stay
+                        safe
+                        in the digital world.<br>
+                </p>
+            </div>
+
+                <img id="shot" src="shot.png" alt="">
+            </center>
+        </section>
+    </div>
+
+</body>
+
+</html>
